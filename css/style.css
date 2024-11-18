@@ -1,0 +1,6 @@
+.image-container{
+    width: 100%; /* Hoặc chiều rộng mong muốn */
+    height: 180px; /* Chỉ hiển thị 160px chiều cao */
+    overflow: hidden; /* Cắt phần vượt quá */
+    position: relative; /* Đặt vị trí tương đối cho ảnh con */
+}
