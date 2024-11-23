@@ -1,6 +1,23 @@
-.image-container{
-    width: 100%; /* Hoặc chiều rộng mong muốn */
-    height: 180px; /* Chỉ hiển thị 160px chiều cao */
-    overflow: hidden; /* Cắt phần vượt quá */
-    position: relative; /* Đặt vị trí tương đối cho ảnh con */
+.image-container {
+    width: 100%;
+    /* Hoặc chiều rộng mong muốn */
+    height: 180px;
+    /* Chỉ hiển thị 160px chiều cao */
+    overflow: hidden;
+    /* Cắt phần vượt quá */
+    position: relative;
+    /* Đặt vị trí tương đối cho ảnh con */
+}
+
+.favorite-brand {
+    width: 65%;
+    height: auto;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+.text_color_orange {
+    color: #f37021;
 }
