@@ -417,7 +417,7 @@
               <div class="md:block md:basis-[289px] md:h-full">
                 <div class=" my-navigation mx-4 bg-white md:mx-0 md:h-full">
                   <div
-                    class="navigation-item flex cursor-pointer items-center overflow-hidden px-3 py-4 active css-1yshlkh">
+                    class="navigation-item flex cursor-pointer items-center overflow-hidden px-3 py-4 false css-1yshlkh">
                     <span size="24" class="estore-icon mr-2 css-8u32eo" fill="">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="size-5">
                         <path fill="currentColor"
@@ -465,7 +465,7 @@
                       </svg></span>
                   </div>
                   <div
-                    class="navigation-item flex cursor-pointer items-center overflow-hidden px-3 py-4 false css-1yshlkh">
+                    class="navigation-item flex cursor-pointer items-center overflow-hidden px-3 py-4 active css-1yshlkh">
                     <span size="24" class="estore-icon mr-2 css-8u32eo" fill=""><svg xmlns="http://www.w3.org/2000/svg"
                         width="24" height="24" viewBox="0 0 24 24" class="size-5">
                         <path fill="currentColor"
@@ -529,7 +529,7 @@
               <div class="flex-1 pt-6 pr-6 overflow-hidden">
                 <div class="rounded-lg bg-white mb-6">
                   <div class="info-title hidden py-3 px-4 md:block border-b">
-                    <p class="css-jey85n text-text-primary font-medium text-[20px]">Kinh doanh hôm nay</p>
+                    <p class="css-jey85n text-text-primary font-medium text-[20px]">Danh sách bài viết</p>
                   </div>
                   <div class="container-lite relative z-10 pt-4 pb-6">
                     <div class="grid grid-cols-3 umd:grid-cols-2 gap-7 umd:gap-7">
@@ -564,90 +564,108 @@
                   </div>
                 </div>
                 <div class="rounded-lg bg-white mb-6">
-                  <div class="info-title hidden py-3 px-4 md:block md:flex justify-between">
-                    <p class="css-jey85n text-text-primary font-medium text-[20px]">Doanh thu bán hàng</p>
-                    <div class="filter-container">
-                      <select id="monthFilter" class="h-full text-bold">
-                        <option value="7days">7 ngày qua</option>
-                        <option value="14days">14 ngày qua</option>
-                        <option value="1month">1 tháng qua</option>
-                        <option value="3month">3 tháng qua</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="container-lite relative z-10 pt-4 pb-6">
-                    <div class="grid grid-cols-4 umd:grid-cols-2 gap-7 umd:gap-7">
-                      <div style="width: 1520px; height: 400px; margin: auto; padding-top: 50px;">
-                        <canvas id="myChart"></canvas>
+                  <div class="rounded-lg relative z-10">
+                    <div class="omd:rounded-xl omd:basis-[804px] umd:basis-full omd:shrink-0 overflow-hidden">
+                      <div class="flex items-center text-caption2 font-medium bg-white" style="border-bottom: 1px solid black">
+                        <div
+                        class="p-4" style="height: 45px;">
+                        <input type="checkbox" name="" id="">
                       </div>
-                      <script>
-                        const ctx = document.getElementById('myChart').getContext('2d');
-                        const myChart = new Chart(ctx, {
-                          type: 'bar', // Loại biểu đồ (cột)
-                          data: {
-                            labels: ['11/11', '12/11', '13/11', '14/11', '15/11', '16/11', '17/11'],
-                            datasets: [{
-                              label: 'Doanh thu bán hàng',
-                              data: [89999223, 87123321, 43657233, 80231243, 13123214, 70999123, 90303232], // Giá trị
-                              backgroundColor: [
-                                'rgba(35, 95, 174, 0.8)'
-                              ],
-                              borderColor: [
-                                'rgba(35, 95, 174, 1)'
-                              ],
-                              borderWidth: 1
-                            }]
-                          },
-                          options: {
-                            responsive: true,
-                            maintainAspectRatio: false,
-                            plugins: {
-                              legend: {
-                                display: true,
-                                position: 'top',
-                              },
-                            },
-                            scales: {
-                              x: {
-                                ticks: {
-                                  color: 'rgba(0, 0, 0, 0.7)'
-                                },
-                                grid: {
-                                  display: false // Ẩn các đường lưới dọc
-                                }
-                              },
-                              y: {
-                                beginAtZero: true
-                              }
-                            },
-                            datasets: {
-                              bar: {
-                                barPercentage: 0.5, // Độ rộng tương đối của cột (50% so với không gian cột)
-                                categoryPercentage: 0.6 // Khoảng cách giữa các cột (nhỏ hơn là sát nhau hơn)
-                              }
-                            }
-                          }
-
-                        });
-
-                        // Xử lý filter khi thay đổi select box
-                        const monthFilter = document.getElementById('monthFilter');
-                        monthFilter.addEventListener('change', () => {
-                          const selectedMonth = monthFilter.value;
-                          if (selectedMonth === 'all') {
-                            // Hiển thị toàn bộ dữ liệu
-                            myChart.data.labels = originalData.labels;
-                            myChart.data.datasets[0].data = originalData.datasets[0].data;
-                          } else {
-                            // Lọc dữ liệu theo tháng được chọn
-                            const index = originalData.labels.indexOf(selectedMonth);
-                            myChart.data.labels = [originalData.labels[index]];
-                            myChart.data.datasets[0].data = [originalData.datasets[0].data[index]];
-                          }
-                          // Cập nhật biểu đồ
-                          myChart.update();
-                        });
-                      </script>
+                        <div class="umd:hidden text-center omd:basis-[260px]">Mã bài viết</div>
+                        <div class="umd:hidden text-center omd:basis-[600px]">Tên bài viết</div>
+                        <div class="umd:hidden text-center omd:basis-[300px]">Ngày đăng bài</div>
+                        <div class="umd:hidden text-center omd:basis-[300px]">Thao tác</div>
+                      </div>
+                      <div class="umd:px-0 omd:mt-0.5 divide-y divide-divider-1pt bg-white umd:[&amp;>*]:px-4 [&amp;>:first-child]:pt-0 [&amp;>:last-child]:pb-0">
+                        <div style="opacity: 1; background-color: #EAF3FF;">
+                          <div>
+                            <div class="umd:items-start flex items-center py-3">
+                              <div class="p-4"">
+                                <input type="checkbox" name="" id="">
+                              </div>
+                              <div class="text-center omd:basis-[260px]">BV_0001</div>
+                              <div class="umd:hidden text-center omd:basis-[600px]">5 sai lầm khi sử dụng kem chống nắng</div>
+                              <div class="umd:hidden text-center omd:basis-[300px]">22-01-2023</div>
+                              <div class="umd:hidden text-center omd:basis-[300px] flex justify-center">
+                                <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:rg:" data-state="closed" class="flex ml-3 omd:ml-4 h-10 p-[3px] shrink-0 text-gray-6 [&amp;:not(:disabled)]:hover:opacity-75 [&amp;:not(:disabled)]:active:opacity-100 disabled:opacity-50 disabled:cursor-not-allowed" style="column-gap: 10px; align-items: center;">
+                                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px]">
+                                    <path d="M2.91602 7.03125L4.16144 22.0657C4.25069 23.1499 5.17422 24 6.26256 24H17.7378C18.8261 24 19.7497 23.1499 19.8389 22.0657L21.0843 7.03125H2.91602ZM8.48387 21.1875C8.11581 21.1875 7.80616 20.9012 7.78281 20.5283L7.07969 9.18455C7.05564 8.79661 7.3502 8.46291 7.73748 8.43886C8.13916 8.41069 8.45847 8.70872 8.48317 9.09666L9.1863 20.4404C9.21119 20.8421 8.89333 21.1875 8.48387 21.1875ZM12.7033 20.4844C12.7033 20.873 12.3888 21.1875 12.0002 21.1875C11.6115 21.1875 11.297 20.873 11.297 20.4844V9.14062C11.297 8.75198 11.6115 8.4375 12.0002 8.4375C12.3888 8.4375 12.7033 8.75198 12.7033 9.14062V20.4844ZM16.9206 9.18459L16.2175 20.5283C16.1944 20.8974 15.8867 21.205 15.4718 21.1861C15.0845 21.1621 14.79 20.8284 14.814 20.4405L15.5171 9.0967C15.5412 8.70877 15.8811 8.42653 16.2628 8.43891C16.6501 8.46295 16.9447 8.79666 16.9206 9.18459Z" fill="currentColor"></path>
+                                    <path d="M21.1406 2.8125H16.9219V2.10938C16.9219 0.946219 15.9757 0 14.8125 0H9.1875C8.02434 0 7.07812 0.946219 7.07812 2.10938V2.8125H2.85938C2.0827 2.8125 1.45312 3.44208 1.45312 4.21875C1.45312 4.99533 2.0827 5.625 2.85938 5.625C9.32653 5.625 14.6737 5.625 21.1406 5.625C21.9173 5.625 22.5469 4.99533 22.5469 4.21875C22.5469 3.44208 21.9173 2.8125 21.1406 2.8125ZM15.5156 2.8125H8.48438V2.10938C8.48438 1.72144 8.79956 1.40625 9.1875 1.40625H14.8125C15.2004 1.40625 15.5156 1.72144 15.5156 2.10938V2.8125Z" fill="currentColor"></path>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px]" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></g></svg>
+                            </button>
+                            
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="opacity: 1;">
+                          <div>
+                            <div class="umd:items-start flex items-center py-3">
+                              <div class="p-4"">
+                                <input type="checkbox" name="" id="">
+                              </div>
+                              <div class="text-center omd:basis-[260px]">BV_0001</div>
+                              <div class="umd:hidden text-center omd:basis-[600px]">5 sai lầm khi sử dụng kem chống nắng</div>
+                              <div class="umd:hidden text-center omd:basis-[300px]">22-01-2023</div>
+                              <div class="umd:hidden text-center omd:basis-[300px] flex justify-center">
+                                <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:rg:" data-state="closed" class="flex ml-3 omd:ml-4 h-10 p-[3px] shrink-0 text-gray-6 [&amp;:not(:disabled)]:hover:opacity-75 [&amp;:not(:disabled)]:active:opacity-100 disabled:opacity-50 disabled:cursor-not-allowed" style="column-gap: 10px; align-items: center;">
+                                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px]">
+                                    <path d="M2.91602 7.03125L4.16144 22.0657C4.25069 23.1499 5.17422 24 6.26256 24H17.7378C18.8261 24 19.7497 23.1499 19.8389 22.0657L21.0843 7.03125H2.91602ZM8.48387 21.1875C8.11581 21.1875 7.80616 20.9012 7.78281 20.5283L7.07969 9.18455C7.05564 8.79661 7.3502 8.46291 7.73748 8.43886C8.13916 8.41069 8.45847 8.70872 8.48317 9.09666L9.1863 20.4404C9.21119 20.8421 8.89333 21.1875 8.48387 21.1875ZM12.7033 20.4844C12.7033 20.873 12.3888 21.1875 12.0002 21.1875C11.6115 21.1875 11.297 20.873 11.297 20.4844V9.14062C11.297 8.75198 11.6115 8.4375 12.0002 8.4375C12.3888 8.4375 12.7033 8.75198 12.7033 9.14062V20.4844ZM16.9206 9.18459L16.2175 20.5283C16.1944 20.8974 15.8867 21.205 15.4718 21.1861C15.0845 21.1621 14.79 20.8284 14.814 20.4405L15.5171 9.0967C15.5412 8.70877 15.8811 8.42653 16.2628 8.43891C16.6501 8.46295 16.9447 8.79666 16.9206 9.18459Z" fill="currentColor"></path>
+                                    <path d="M21.1406 2.8125H16.9219V2.10938C16.9219 0.946219 15.9757 0 14.8125 0H9.1875C8.02434 0 7.07812 0.946219 7.07812 2.10938V2.8125H2.85938C2.0827 2.8125 1.45312 3.44208 1.45312 4.21875C1.45312 4.99533 2.0827 5.625 2.85938 5.625C9.32653 5.625 14.6737 5.625 21.1406 5.625C21.9173 5.625 22.5469 4.99533 22.5469 4.21875C22.5469 3.44208 21.9173 2.8125 21.1406 2.8125ZM15.5156 2.8125H8.48438V2.10938C8.48438 1.72144 8.79956 1.40625 9.1875 1.40625H14.8125C15.2004 1.40625 15.5156 1.72144 15.5156 2.10938V2.8125Z" fill="currentColor"></path>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px]" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></g></svg>
+                            </button>
+                            
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="opacity: 1; background-color: #EAF3FF;">
+                          <div>
+                            <div class="umd:items-start flex items-center py-3">
+                              <div class="p-4"">
+                                <input type="checkbox" name="" id="">
+                              </div>
+                              <div class="text-center omd:basis-[260px]">BV_0001</div>
+                              <div class="umd:hidden text-center omd:basis-[600px]">5 sai lầm khi sử dụng kem chống nắng</div>
+                              <div class="umd:hidden text-center omd:basis-[300px]">22-01-2023</div>
+                              <div class="umd:hidden text-center omd:basis-[300px] flex justify-center">
+                                <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:rg:" data-state="closed" class="flex ml-3 omd:ml-4 h-10 p-[3px] shrink-0 text-gray-6 [&amp;:not(:disabled)]:hover:opacity-75 [&amp;:not(:disabled)]:active:opacity-100 disabled:opacity-50 disabled:cursor-not-allowed" style="column-gap: 10px; align-items: center;">
+                                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px]">
+                                    <path d="M2.91602 7.03125L4.16144 22.0657C4.25069 23.1499 5.17422 24 6.26256 24H17.7378C18.8261 24 19.7497 23.1499 19.8389 22.0657L21.0843 7.03125H2.91602ZM8.48387 21.1875C8.11581 21.1875 7.80616 20.9012 7.78281 20.5283L7.07969 9.18455C7.05564 8.79661 7.3502 8.46291 7.73748 8.43886C8.13916 8.41069 8.45847 8.70872 8.48317 9.09666L9.1863 20.4404C9.21119 20.8421 8.89333 21.1875 8.48387 21.1875ZM12.7033 20.4844C12.7033 20.873 12.3888 21.1875 12.0002 21.1875C11.6115 21.1875 11.297 20.873 11.297 20.4844V9.14062C11.297 8.75198 11.6115 8.4375 12.0002 8.4375C12.3888 8.4375 12.7033 8.75198 12.7033 9.14062V20.4844ZM16.9206 9.18459L16.2175 20.5283C16.1944 20.8974 15.8867 21.205 15.4718 21.1861C15.0845 21.1621 14.79 20.8284 14.814 20.4405L15.5171 9.0967C15.5412 8.70877 15.8811 8.42653 16.2628 8.43891C16.6501 8.46295 16.9447 8.79666 16.9206 9.18459Z" fill="currentColor"></path>
+                                    <path d="M21.1406 2.8125H16.9219V2.10938C16.9219 0.946219 15.9757 0 14.8125 0H9.1875C8.02434 0 7.07812 0.946219 7.07812 2.10938V2.8125H2.85938C2.0827 2.8125 1.45312 3.44208 1.45312 4.21875C1.45312 4.99533 2.0827 5.625 2.85938 5.625C9.32653 5.625 14.6737 5.625 21.1406 5.625C21.9173 5.625 22.5469 4.99533 22.5469 4.21875C22.5469 3.44208 21.9173 2.8125 21.1406 2.8125ZM15.5156 2.8125H8.48438V2.10938C8.48438 1.72144 8.79956 1.40625 9.1875 1.40625H14.8125C15.2004 1.40625 15.5156 1.72144 15.5156 2.10938V2.8125Z" fill="currentColor"></path>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px]" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></g></svg>
+                            </button>
+                            
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="opacity: 1;">
+                          <div>
+                            <div class="umd:items-start flex items-center py-3">
+                              <div class="p-4"">
+                                <input type="checkbox" name="" id="">
+                              </div>
+                              <div class="text-center omd:basis-[260px]">BV_0001</div>
+                              <div class="umd:hidden text-center omd:basis-[600px]">5 sai lầm khi sử dụng kem chống nắng</div>
+                              <div class="umd:hidden text-center omd:basis-[300px]">22-01-2023</div>
+                              <div class="umd:hidden text-center omd:basis-[300px] flex justify-center">
+                                <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:rg:" data-state="closed" class="flex ml-3 omd:ml-4 h-10 p-[3px] shrink-0 text-gray-6 [&amp;:not(:disabled)]:hover:opacity-75 [&amp;:not(:disabled)]:active:opacity-100 disabled:opacity-50 disabled:cursor-not-allowed" style="column-gap: 10px; align-items: center;">
+                                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px]">
+                                    <path d="M2.91602 7.03125L4.16144 22.0657C4.25069 23.1499 5.17422 24 6.26256 24H17.7378C18.8261 24 19.7497 23.1499 19.8389 22.0657L21.0843 7.03125H2.91602ZM8.48387 21.1875C8.11581 21.1875 7.80616 20.9012 7.78281 20.5283L7.07969 9.18455C7.05564 8.79661 7.3502 8.46291 7.73748 8.43886C8.13916 8.41069 8.45847 8.70872 8.48317 9.09666L9.1863 20.4404C9.21119 20.8421 8.89333 21.1875 8.48387 21.1875ZM12.7033 20.4844C12.7033 20.873 12.3888 21.1875 12.0002 21.1875C11.6115 21.1875 11.297 20.873 11.297 20.4844V9.14062C11.297 8.75198 11.6115 8.4375 12.0002 8.4375C12.3888 8.4375 12.7033 8.75198 12.7033 9.14062V20.4844ZM16.9206 9.18459L16.2175 20.5283C16.1944 20.8974 15.8867 21.205 15.4718 21.1861C15.0845 21.1621 14.79 20.8284 14.814 20.4405L15.5171 9.0967C15.5412 8.70877 15.8811 8.42653 16.2628 8.43891C16.6501 8.46295 16.9447 8.79666 16.9206 9.18459Z" fill="currentColor"></path>
+                                    <path d="M21.1406 2.8125H16.9219V2.10938C16.9219 0.946219 15.9757 0 14.8125 0H9.1875C8.02434 0 7.07812 0.946219 7.07812 2.10938V2.8125H2.85938C2.0827 2.8125 1.45312 3.44208 1.45312 4.21875C1.45312 4.99533 2.0827 5.625 2.85938 5.625C9.32653 5.625 14.6737 5.625 21.1406 5.625C21.9173 5.625 22.5469 4.99533 22.5469 4.21875C22.5469 3.44208 21.9173 2.8125 21.1406 2.8125ZM15.5156 2.8125H8.48438V2.10938C8.48438 1.72144 8.79956 1.40625 9.1875 1.40625H14.8125C15.2004 1.40625 15.5156 1.72144 15.5156 2.10938V2.8125Z" fill="currentColor"></path>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px]" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></g></svg>
+                            </button>
+                            
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -15772,6 +15772,9 @@ body {
     .omd\:basis-\[312px\] {
         flex-basis: 312px
     }
+    .omd\:basis-\[300px\] {
+        flex-basis: 300px
+    }
 
     .omd\:basis-\[380px\] {
         flex-basis: 380px
@@ -15781,8 +15784,16 @@ body {
         flex-basis: 447px
     }
 
+    .omd\:basis-\[520px\] {
+        flex-basis: 520px
+    }
+
     .omd\:basis-\[50px\] {
         flex-basis: 50px
+    }
+
+    .omd\:basis-\[600px\] {
+        flex-basis: 600px
     }
 
     .omd\:basis-\[717px\] {
