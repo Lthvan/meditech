@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="robots" content="INDEX, FOLLOW">
+  <meta name="description"
+    content="Nhà thuốc MEDITECH chuyên thuốc theo đơn, thực phẩm chức năng, dược mỹ phẩm, thiết bị y tê, chăm sóc sức khoẻ">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:title" content="Nhà thuốc MEDITECH - Hệ thống chuỗi nhà thuốc lớn">
+  <meta property="og:description"
+    content="Nhà thuốc MEDITECH chuyên thuốc theo đơn, thực phẩm chức năng, dược mỹ phẩm, thiết bị y tê, chăm sóc sức khoẻ">
+  <meta property="og:type" content="article">
+  <title>Đơn hàng</title>
+  <meta name="next-head-count" content="12">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="copyright" content="Nhà thuốc MEDITECH">
+  <link rel="preload" href="/_next/static/media/df0a9ae256c0569c-s.p.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous" data-next-font="size-adjust">
+  <link rel="preload" href="/_next/static/css/d9f95c0540799e22.css" as="style">
+  <link rel="stylesheet" href="css/d9f95c0540799e22.css" data-n-g="">
+  <link rel="preload" href="/_next/static/css/57e1e30e9a98db36.css" as="style">
+  <link rel="stylesheet" href="css/57e1e30e9a98db36.css">
+  <link rel="preload" href="/_next/static/css/431944509084d071.css" as="style">
+  <link rel="stylesheet" href="css/431944509084d071.css"><noscript data-n-css=""></noscript>
+  <link rel="stylesheet" href="css/chart.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style id="__jsx-3718767453">
+    html {
+      font-family: '__Inter_ae9dff', '__Inter_Fallback_ae9dff' !important
+    }
+  </style>
+  <style id="__jsx-726443310">
+    body #fpt_ai_livechat_button {
+      bottom: 80px !important;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    body #fpt_ai_livechat_button_tooltip {
+      bottom: 92px !important
+    }
+  </style>
+</head>
+
+<body>
+  <div id="__next">
+    <style data-emotion="css-global 1cx4u3k">
+      :root {
+        --root-font-size: 16px;
+        --text-primary: #000000;
+        --brand-color-1: #0037c1;
+        --brand-color-2: #fa8c16;
+        --brand-color-3: #52c41a;
+        --blue-50: #f0fbff;
+        --blue-100: #eaeffa;
+        --blue-150: #c1d0f6;
+        --blue-200: #acc0f3;
+        --blue-300: #769dea;
+        --blue-400: #306de4;
+        --blue-500: #1250dc;
+        --blue-600: #0037c1;
+        --blue-700: #002c9a;
+        --blue-800: #002174;
+        --blue-900: #00164d;
+        --blue-1000: #000b27;
+        --black: #000;
+        --white: #fff;
+        --white-200: #fcfcfc;
+        --gray-100: #f6f7f9;
+        --gray-150: #edf0f3;
+        --gray-200: #e4e8ed;
+        --gray-300: #d9dfe5;
+        --gray-400: #c1c8d1;
+        --gray-500: #a9b2be;
+        --gray-600: #657384;
+        --gray-700: #4a4f63;
+        --gray-800: #2f364a;
+        --gray-800-80: rgba(47, 54, 74, 0.8);
+        --gray-900: #20283d;
+        --gray-1000: #020b27;
+        --red-100: #fffbfa;
+        --red-200: #fef3f2;
+        --red-300: #fee4e2;
+        --red-400: #ffcdca;
+        --red-500: #fda29b;
+        --red-600: #fa7066;
+        --red-700: #f04438;
+        --red-800: #d92d20;
+        --red-900: #b42318;
+        --red-1000: #912018;
+        --yellow-100: #fffcf5;
+        --yellow-200: #fff3e1;
+        --yellow-300: #fef0c7;
+        --yellow-400: #fedf89;
+        --yellow-500: #fec84b;
+        --yellow-600: #fdb022;
+        --yellow-700: #f79009;
+        --yellow-800: #dc6803;
+        --yellow-900: #b54708;
+        --yellow-1000: #93370d;
+        --green-100: #f6fef9;
+        --green-200: #defcea;
+        --green-300: #d1fadf;
+        --green-400: #a6f4c5;
+        --green-500: #6ce9a6;
+        --green-600: #32d583;
+        --green-700: #12b76a;
+        --green-800: #039855;
+        --green-900: #027a48;
+        --green-1000: #05603a;
+        --gradient-blue-1: linear-gradient(315deg, var(--blue-500) 0%, var(--blue-400) 100%);
+        --gradient-blue-2: linear-gradient(315deg, var(--blue-400) 0%, var(--blue-300) 100%);
+        --gradient-blue-3: linear-gradient(315deg, var(--blue-300) 0%, var(--blue-200) 100%);
+        --gradient-blue-4: linear-gradient(358deg, #bbcef4 1.63%, #dfe7fb 98.37%);
+        --gradient-blue-5: linear-gradient(359deg, #bbcef4 -224.09%, #dfe7fb 111.69%);
+        --gradient-green-1: linear-gradient(315deg, var(--green-800) 0%, var(--green-700) 100%);
+        --gradient-green-2: linear-gradient(315deg, #039836 0%, #12b75e 100%);
+        --gradient-yellow-1: linear-gradient(315deg, var(--yellow-700) 0%, var(--yellow-600) 100%);
+        --gradient-yellow-2: linear-gradient(315deg, var(--yellow-700) 0%, var(--yellow-600) 100%);
+        --gradient-red-1: linear-gradient(315deg, var(--red-800) 0%, var(--red-700) 100%);
+        --gradient-red-2: linear-gradient(315deg, var(--red-800) 0%, var(--red-700) 100%);
+        --gradient-red-3: linear-gradient(295deg, #CD1A0C 0%, #FF5246 98.45%);
+        --shadow-xs: 0px 0px 8px -2px rgba(0, 39, 102, 0.1), 0px 0px 4px -2px rgba(0, 39, 102, 0.06);
+        --shadow-sm: 0px 0px 16px -4px rgba(0, 39, 102, 0.08), 0px 0px 6px -2px rgba(0, 39, 102, 0.03);
+        --shadow-md: 0px 0px 24px -4px rgba(0, 39, 102, 0.08), 0px 0px 8px -4px rgba(0, 39, 102, 0.03);
+        --shadow-lg: 0px 0px 48px -12px rgba(0, 39, 102, 0.18);
+        --shadow-xl: 0px 0px 64px -12px rgba(0, 39, 102, 0.14);
+        --shadow-2xl: 0px 0px 16px rgba(2, 11, 39, 0.04);
+        --shadow-3xl: 0px -4px 16px rgba(2, 11, 39, 0.08);
+      }
+
+      .livechat-button {
+        background: var(--gradient-blue-1) !important;
+        border-color: transparent !important;
+      }
+    </style>
+    <div class="omd:min-w-container-content lg:w-full flex flex-col min-h-screen">
+      <header class="sticky top-0 z-[200] bg-[#2167dd] transition-[height] md:relative">
+        <div class="relative">
+          <div class="relative md:static">
+            <div class="h-full md:relative md:h-auto">
+              <div
+                class="container-admin grid grid-cols-[40px_1fr_40px] grid-rows-[40px] content-center pt-1.5 pb-2 md:grid-cols-[200px_1fr_270px] md:grid-rows-[70px] pr-3">
+                <div class="grid place-content-start content-center md:hidden"><button type="button"
+                    aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:Rd4l9m:" data-state="closed"><svg
+                      width="24" height="24" class="text-white" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3 17H21C21.5523 17 22 17.4477 22 18C22 18.5128 21.614 18.9355 21.1166 18.9933L21 19H3C2.44772 19 2 18.5523 2 18C2 17.4872 2.38604 17.0645 2.88338 17.0067L3 17H21H3ZM2.99988 11L20.9999 10.9978C21.5522 10.9978 22 11.4454 22 11.9977C22 12.5105 21.6141 12.9333 21.1167 12.9911L21.0001 12.9978L3.00012 13C2.44784 13.0001 2 12.5524 2 12.0001C2 11.4873 2.38594 11.0646 2.88326 11.0067L2.99988 11L20.9999 10.9978L2.99988 11ZM3 5H21C21.5523 5 22 5.44772 22 6C22 6.51284 21.614 6.93551 21.1166 6.99327L21 7H3C2.44772 7 2 6.55228 2 6C2 5.48716 2.38604 5.06449 2.88338 5.00673L3 5H21H3Z"
+                        fill="currentColor"></path>
+                    </svg></button></div>
+                <div
+                  class="grid place-content-center content-center transition-[opacity] duration-300 md:place-content-start">
+                  <a href="/"><img src="../common/images/logo.svg" alt="MEDITECH"
+                      class="h-[62px] w-[180px] !bg-transparent !bg-none object-contain md:h-[70px] md:w-[183px]"></a>
+                </div>
+                <div class="info-title hidden py-3 px-4 md:block md:flex md:items-center">
+                  <p class="text-text-white font-semibold md:text-title3" style="padding-left:100px">SẢN PHẨM</p>
+                </div>
+                <div class="grid place-content-end content-center md:col-start-3 md:col-end-4 md:place-content-stretch">
+                  <div class="flex h-full items-center justify-between"><span class="mr-auto inline-block"></span>
+                    <style data-emotion="css 62ialb">
+                      .css-62ialb {
+                        position: relative;
+                      }
+
+                      @media (min-width: 769px) {
+
+                        .css-62ialb:hover .list-product,
+                        .css-62ialb:focus .list-product {
+                          padding-top: 20px;
+                          opacity: 1;
+                          visibility: visible;
+                        }
+                      }
+                    </style>
+                    <div class="hidden omd:flex items-center">
+                      <div class="flex items-center cursor-pointer" style="padding-right: 60px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"
+                          style="color: white;">
+                          <path fill="currentColor" d="M11 7c0 1.66-1.34 3-3 3S5 8.66 5 7s1.34-3 3-3s3 1.34 3 3" />
+                          <path fill="currentColor" fill-rule="evenodd"
+                            d="M16 8c0 4.42-3.58 8-8 8s-8-3.58-8-8s3.58-8 8-8s8 3.58 8 8M4 13.75C4.16 13.484 5.71 11 7.99 11c2.27 0 3.83 2.49 3.99 2.75A6.98 6.98 0 0 0 14.99 8c0-3.87-3.13-7-7-7s-7 3.13-7 7c0 2.38 1.19 4.49 3.01 5.75"
+                            clip-rule="evenodd" />
+                        </svg>
+                        <div class="ml-2 text-body1 font-medium text-white">Lê Thanh Vân</div>
+                      </div>
+                      <div style="width: 40px; height: 40px; position: relative;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                          style="color: white;">
+                          <g fill="none" fill-rule="evenodd">
+                            <path
+                              d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
+                            <path fill="currentColor"
+                              d="M5 9a7 7 0 0 1 14 0v3.764l1.822 3.644A1.1 1.1 0 0 1 19.838 18h-3.964a4.002 4.002 0 0 1-7.748 0H4.162a1.1 1.1 0 0 1-.984-1.592L5 12.764zm5.268 9a2 2 0 0 0 3.464 0zM12 4a5 5 0 0 0-5 5v3.764a2 2 0 0 1-.211.894L5.619 16h12.763l-1.17-2.342a2 2 0 0 1-.212-.894V9a5 5 0 0 0-5-5" />
+                          </g>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48"
+                          style="position: absolute; top: -10px; left:12px; color:#F37021">
+                          <path fill="currentColor" stroke="currentColor" stroke-width="4"
+                            d="M24 33a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="bg-layer-gray flex-1 relative">
+        <style data-emotion="css 1zrptk">
+          .css-1zrptk {
+            --screens-lg: 1280px;
+            --screens-sm: 375px;
+          }
+
+          @media (max-width: 375px) {
+            .css-1zrptk {
+              width: var(--screens-sm);
+              padding-right: 16px;
+              padding-left: 16px;
+            }
+          }
+
+          @media (min-width: 375px) {
+            .css-1zrptk {
+              width: 100%;
+              max-width: 100%;
+            }
+          }
+
+          @media (min-width: 769px) {
+            .css-1zrptk {
+              width: var(--screens-lg);
+              max-width: var(--screens-lg);
+            }
+          }
+        </style>
+        <div class="container md:container hidden md:block omd:relative omd:z-[100] css-1zrptk">
+          <style data-emotion="css 18zbqn2">
+            .css-18zbqn2 {
+              --screens-lg: 1280px;
+              --screens-sm: 375px;
+              margin-right: -16px;
+              margin-left: -16px;
+              padding-left: 16px;
+              padding-right: 16px;
+            }
+
+            @media screen and (min-width: 769px) {
+              .css-18zbqn2 {
+                margin-right: 0;
+                margin-left: 0;
+                padding-left: 0;
+                padding-right: 0;
+              }
+            }
+
+            @media screen and (min-width: 769px) and (max-width: 1279px) {
+              .css-18zbqn2 {
+                margin-right: -32px;
+                margin-left: -32px;
+                padding-left: 32px;
+                padding-right: 32px;
+              }
+            }
+
+            @media screen and (min-width: 1280px) {
+              .css-18zbqn2 {
+                margin-right: calc(calc(100vw - var(--screens-lg) + 64px) / -2);
+                margin-left: calc(calc(100vw - var(--screens-lg) + 64px) / -2);
+                padding-left: calc(calc(100vw - var(--screens-lg) + 64px) / 2);
+                padding-right: calc(calc(100vw - var(--screens-lg) + 64px) / 2);
+              }
+            }
+          </style>
+        </div>
+        <div id="overlay-menu"></div>
+        <style data-emotion="css 1zrptk">
+          .css-1zrptk {
+            --screens-lg: 1280px;
+            --screens-sm: 375px;
+          }
+
+          @media (max-width: 375px) {
+            .css-1zrptk {
+              width: var(--screens-sm);
+              padding-right: 16px;
+              padding-left: 16px;
+            }
+          }
+
+          @media (min-width: 375px) {
+            .css-1zrptk {
+              width: 100%;
+              max-width: 100%;
+            }
+          }
+
+          @media (min-width: 769px) {
+            .css-1zrptk {
+              width: var(--screens-lg);
+              max-width: var(--screens-lg);
+            }
+          }
+        </style>
+        <div class="container-admin h-[calc(100vh-84px)]">
+          <div class="css-1wn7moc md:h-full">
+            <div class="md:flex md:gap-7 md:h-full">
+              <div class="md:block md:basis-[289px] md:h-full">
+                <div class=" my-navigation mx-4 bg-white md:mx-0 md:h-full">
+                  <div
+                    class="navigation-item flex cursor-pointer items-center overflow-hidden px-3 py-4 false css-1yshlkh">
+                    <span size="24" class="estore-icon mr-2 css-8u32eo" fill="">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="size-5">
+                        <path fill="currentColor"
+                          d="M19.75 10a.75.75 0 0 0-1.5 0zm-14 0a.75.75 0 0 0-1.5 0zm14.72 2.53a.75.75 0 1 0 1.06-1.06zM12 3l.53-.53a.75.75 0 0 0-1.06 0zm-9.53 8.47a.75.75 0 1 0 1.06 1.06zM7 21.75h10v-1.5H7zM19.75 19v-9h-1.5v9zm-14 0v-9h-1.5v9zm15.78-7.53l-9-9l-1.06 1.06l9 9zm-10.06-9l-9 9l1.06 1.06l9-9zM17 21.75A2.75 2.75 0 0 0 19.75 19h-1.5c0 .69-.56 1.25-1.25 1.25zm-10-1.5c-.69 0-1.25-.56-1.25-1.25h-1.5A2.75 2.75 0 0 0 7 21.75z" />
+                      </svg>
+                    </span>
+                    <p class="css-1v577ri text-text-secondary label flex-1">Trang chủ</p><span size="20"
+                      class="estore-icon css-wi4pw5">
+                      <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.25383 4.29289C8.86331 4.68342 8.86331 5.31658 9.25383 5.70711L15.5467 12L9.25383 18.2929C8.86331 18.6834 8.86331 19.3166 9.25383 19.7071C9.64436 20.0976 10.2775 20.0976 10.668 19.7071L17.668 12.7071C18.0586 12.3166 18.0586 11.6834 17.668 11.2929L10.668 4.29289C10.2775 3.90237 9.64435 3.90237 9.25383 4.29289Z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </span>
+                  </div>
+                  <div
+                    class="navigation-item flex cursor-pointer items-center overflow-hidden px-3 py-4 active css-1yshlkh">
+                    <span size="24" class="estore-icon mr-2 css-8u32eo" fill=""><svg xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24" class="size-5">
+                        <path fill="currentColor"
+                          d="M20 22H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1m-1-2V4H5v16zM8 9h8v2H8zm0 4h8v2H8z" />
+                      </svg>
+                    </span>
+                    <p class="css-1v577ri text-text-secondary label flex-1">Đơn hàng</p><span size="20"
+                      class="estore-icon css-wi4pw5"><svg viewBox="0 0 25 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.25383 4.29289C8.86331 4.68342 8.86331 5.31658 9.25383 5.70711L15.5467 12L9.25383 18.2929C8.86331 18.6834 8.86331 19.3166 9.25383 19.7071C9.64436 20.0976 10.2775 20.0976 10.668 19.7071L17.668 12.7071C18.0586 12.3166 18.0586 11.6834 17.668 11.2929L10.668 4.29289C10.2775 3.90237 9.64435 3.90237 9.25383 4.29289Z"
+                          fill="currentColor"></path>
+                      </svg></span>
+                  </div>
+                  <div
+                    class="navigation-item flex cursor-pointer items-center overflow-hidden px-3 py-4 false css-1yshlkh">
+                    <span size="24" class="estore-icon mr-2 css-8u32eo" fill=""><svg xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24" class="size-5">
+                        <path fill="currentColor"
+                          d="M22 3H2v6h1v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9h1zM4 5h16v2H4zm15 15H5V9h14zM9 11h6a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2" />
+                      </svg></span>
+                    <p class="css-1v577ri text-text-secondary label flex-1">Sản phẩm</p><span size="20"
+                      class="estore-icon css-wi4pw5"><svg viewBox="0 0 25 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.25383 4.29289C8.86331 4.68342 8.86331 5.31658 9.25383 5.70711L15.5467 12L9.25383 18.2929C8.86331 18.6834 8.86331 19.3166 9.25383 19.7071C9.64436 20.0976 10.2775 20.0976 10.668 19.7071L17.668 12.7071C18.0586 12.3166 18.0586 11.6834 17.668 11.2929L10.668 4.29289C10.2775 3.90237 9.64435 3.90237 9.25383 4.29289Z"
+                          fill="currentColor"></path>
+                      </svg></span>
+                  </div>
+                  <div
+                    class="navigation-item flex cursor-pointer items-center overflow-hidden px-3 py-4 false css-1yshlkh">
+                    <span size="24" class="estore-icon mr-2 css-8u32eo" fill=""><svg xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24" class="size-5">
+                        <path fill="currentColor"
+                          d="M5.616 20q-.691 0-1.153-.462T4 18.384V5.616q0-.691.463-1.153T5.616 4h9.29q.323 0 .628.13q.305.132.522.349l3.465 3.465q.218.218.348.522q.131.305.131.628v9.29q0 .691-.462 1.154T18.384 20zm0-1h12.769q.269 0 .442-.173t.173-.442V9h-3.192q-.349 0-.578-.23T15 8.192V5H5.616q-.27 0-.443.173T5 5.616v12.769q0 .269.173.442t.443.173M16 16q.214 0 .357-.143t.143-.357t-.143-.357T16 15H8q-.213 0-.357.143T7.5 15.5t.143.357T8 16zm-4.5-7q.214 0 .357-.143T12 8.5t-.143-.357T11.5 8H8q-.213 0-.357.143T7.5 8.5t.143.357T8 9zm4.5 3.5q.214 0 .357-.143T16.5 12t-.143-.357T16 11.5H8q-.213 0-.357.143T7.5 12t.143.357T8 12.5zM5 5v4zv14z" />
+                      </svg></span>
+                    <p class="css-1v577ri text-text-secondary label flex-1">Tin tức</p><span size="20"
+                      class="estore-icon css-wi4pw5"><svg viewBox="0 0 25 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.25383 4.29289C8.86331 4.68342 8.86331 5.31658 9.25383 5.70711L15.5467 12L9.25383 18.2929C8.86331 18.6834 8.86331 19.3166 9.25383 19.7071C9.64436 20.0976 10.2775 20.0976 10.668 19.7071L17.668 12.7071C18.0586 12.3166 18.0586 11.6834 17.668 11.2929L10.668 4.29289C10.2775 3.90237 9.64435 3.90237 9.25383 4.29289Z"
+                          fill="currentColor"></path>
+                      </svg></span>
+                  </div>
+                  <div
+                    class="navigation-item flex cursor-pointer items-center overflow-hidden px-3 py-4 false css-1yshlkh">
+                    <span size="24" class="estore-icon mr-2 css-8u32eo" fill=""><svg xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24" class="size-5">
+                        <path fill="currentColor"
+                          d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2m0 7c2.67 0 8 1.33 8 4v3H4v-3c0-2.67 5.33-4 8-4m0 1.9c-2.97 0-6.1 1.46-6.1 2.1v1.1h12.2V17c0-.64-3.13-2.1-6.1-2.1" />
+                      </svg></span>
+                    <p class="css-1v577ri text-text-secondary label flex-1">Tài khoản</p><span size="20"
+                      class="estore-icon css-wi4pw5"><svg viewBox="0 0 25 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.25383 4.29289C8.86331 4.68342 8.86331 5.31658 9.25383 5.70711L15.5467 12L9.25383 18.2929C8.86331 18.6834 8.86331 19.3166 9.25383 19.7071C9.64436 20.0976 10.2775 20.0976 10.668 19.7071L17.668 12.7071C18.0586 12.3166 18.0586 11.6834 17.668 11.2929L10.668 4.29289C10.2775 3.90237 9.64435 3.90237 9.25383 4.29289Z"
+                          fill="currentColor"></path>
+                      </svg></span>
+                  </div>
+                  <div
+                    class="navigation-item flex cursor-pointer items-center overflow-hidden px-3 py-4 false css-1yshlkh">
+                    <span size="24" class="estore-icon mr-2 css-8u32eo" fill=""><svg xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24" class="size-5">
+                        <path fill="currentColor"
+                          d="m16 11.78l4.24-7.33l1.73 1l-5.23 9.05l-6.51-3.75L5.46 19H22v2H2V3h2v14.54L9.5 8z" />
+                      </svg></span>
+                    <p class="css-1v577ri text-text-secondary label flex-1">Thống kê</p><span size="20"
+                      class="estore-icon css-wi4pw5"><svg viewBox="0 0 25 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.25383 4.29289C8.86331 4.68342 8.86331 5.31658 9.25383 5.70711L15.5467 12L9.25383 18.2929C8.86331 18.6834 8.86331 19.3166 9.25383 19.7071C9.64436 20.0976 10.2775 20.0976 10.668 19.7071L17.668 12.7071C18.0586 12.3166 18.0586 11.6834 17.668 11.2929L10.668 4.29289C10.2775 3.90237 9.64435 3.90237 9.25383 4.29289Z"
+                          fill="currentColor"></path>
+                      </svg></span>
+                  </div>
+                  <div
+                    class="navigation-item flex cursor-pointer items-center overflow-hidden px-3 py-4 false css-1yshlkh">
+                    <span size="24" class="estore-icon mr-[5px] ml-[3px] css-8u32eo" fill=""><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="size-5">
+                        <path fill="currentColor"
+                          d="m17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5M4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4z" />
+                      </svg></span>
+                    <p class="css-1v577ri text-text-secondary label flex-1">Đăng xuất</p><span size="20"
+                      class="estore-icon css-wi4pw5"><svg viewBox="0 0 25 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.25383 4.29289C8.86331 4.68342 8.86331 5.31658 9.25383 5.70711L15.5467 12L9.25383 18.2929C8.86331 18.6834 8.86331 19.3166 9.25383 19.7071C9.64436 20.0976 10.2775 20.0976 10.668 19.7071L17.668 12.7071C18.0586 12.3166 18.0586 11.6834 17.668 11.2929L10.668 4.29289C10.2775 3.90237 9.64435 3.90237 9.25383 4.29289Z"
+                          fill="currentColor"></path>
+                      </svg></span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-1 pt-6 pr-6 overflow-hidden">
+                <div class="rounded-lg bg-white mb-6">
+                  <div class="info-title hidden py-3 px-4 md:block border-b">
+                    <p class="css-jey85n text-text-primary font-medium text-[20px]">Danh sách đơn hàng</p>
+                  </div>
+                  <div class="container-lite relative z-10 pt-4 pb-6">
+                    <div class="grid grid-cols-3 umd:grid-cols-2 gap-7 umd:gap-7">
+                      <div class="md:flex">
+                        <span size="24" class="estore-icon css-8u32eo p-1 rounded-md" fill="" style="background-color:#E0EEFF; color:#1B4C8C; padding-left: 12px; padding-right:12px">
+                          Ngày tạo đơn
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="inline-block" style="color:#1B4C8C;"><path fill="currentColor" d="M19 4h-2V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h16Zm0-9H4V7a1 1 0 0 1 1-1h2v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h2a1 1 0 0 1 1 1Z"/></svg>
+                          </span>
+                          <span size="24" class="estore-icon css-8u32eo p-1 rounded-md" fill="" style="background-color:#E0EEFF; color:#1B4C8C; padding-left: 12px; padding-right:12px; margin-left: 12px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" class="inline-block" style="color:#1B4C8C;"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><path d="M44 14L24 4L4 14v20l20 10l20-10z"/><path stroke-linecap="round" d="m4 14l20 10m0 20V24m20-10L24 24M34 9L14 19"/></g></svg>
+                            Xác nhận tất cả</span>
+                      </div>
+                      <div class="">
+                        <input type="text" height="50px" width="100px" background-color="#ffffff">
+                      </div>
+                      <div class="md:flex rounded" style="border: 2px solid #8F8F8F;">
+                        <span size="24" class="estore-icon css-8u32eo p-1 rounded-md" fill="" style="color:#1B4C8C; padding-left: 12px; padding-right:12px">
+                          <svg
+                            width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="inline-block">
+                            <path
+                              d="M10.9414 1.93125C5.98269 1.93125 1.94336 5.97057 1.94336 10.9293C1.94336 15.888 5.98269 19.9352 10.9414 19.9352C13.0594 19.9352 15.0074 19.193 16.5469 17.9606L20.2949 21.7066C20.4841 21.888 20.7367 21.988 20.9987 21.9853C21.2607 21.9826 21.5112 21.8775 21.6966 21.6923C21.882 21.5072 21.9875 21.2569 21.9906 20.9949C21.9936 20.7329 21.8939 20.4801 21.7129 20.2907L17.9648 16.5427C19.1983 15.0008 19.9414 13.0498 19.9414 10.9293C19.9414 5.97057 15.9001 1.93125 10.9414 1.93125ZM10.9414 3.93128C14.8192 3.93128 17.9395 7.05148 17.9395 10.9293C17.9395 14.8071 14.8192 17.9352 10.9414 17.9352C7.06357 17.9352 3.94336 14.8071 3.94336 10.9293C3.94336 7.05148 7.06357 3.93128 10.9414 3.93128Z"
+                              fill="currentColor"></path>
+                          </svg></span>
+                          <input id="search_header" placeholder="Tìm kiếm sản phẩm"
+                          autocomplete="off" maxlength="200"
+                          class="w-full h-full text-ellipsis bg-transparent text-text-primary outline-none placeholder:text-text-tertiary placeholder-shown:text-ellipsis h-[28px] text-caption2 placeholder:text-caption2"
+                          value="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rounded-t-lg bg-white">
+                  <div class="info-title hidden px-4 md:block border-b md:flex justify-evenly gap-6  ">
+                    <a href="#"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: 2px solid #215AA6; line-height:48px; color:#215AA6; min-width: 100px; text-align: center;">Tất cả</p></a>
+                    <a href="./account_manager_admin.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Chờ xác nhận</p></a>
+                    <a href="./account_manager_admin.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Chờ lấy hàng</p></a>
+                    <a href="./account_manager_admin.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Đang giao</p></a>
+                    <a href="./account_manager_admin.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Đã giao</p></a>
+                    <a href="./account_manager_admin.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Đã hủy</p></a>
+                    <a href="./account_manager_admin.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Trả hàng</p></a>
+                  </div>
+                </div>
+                <div class="rounded-lg bg-white mb-6">
+                  <div class="rounded-lg relative z-10">
+                    <div class="omd:rounded-xl omd:basis-[804px] umd:basis-full omd:shrink-0 overflow-hidden">
+                      <div class="flex items-center text-caption2 font-medium bg-white" style="border-bottom: 1px solid black">
+                        <div
+                        class="p-4" style="height: 45px;">
+                        <input type="checkbox" name="" id="">
+                      </div>
+                        <div class="umd:hidden text-center omd:basis-[260px]">Mã sản phẩm</div>
+                        <div class="umd:hidden text-center omd:basis-[300px]">Tên sản phẩm</div>
+                        <div class="umd:hidden text-center omd:basis-[260px]">Ảnh</div>
+                        <div class="umd:hidden text-center omd:basis-[260px]">Số lượng</div>
+                        <div class="umd:hidden text-center omd:basis-[260px]">Tình trạng</div>
+                        <div class="umd:hidden text-center omd:basis-[260px]">Giá tiền</div>
+                        <div class="umd:hidden text-center omd:basis-[260px]">Danh mục</div>
+                        <div class="umd:hidden text-center omd:basis-[260px]">Thao tác</div>
+                      </div>
+                      <div class="umd:px-0 divide-y divide-divider-1pt bg-white umd:[&amp;>*]:px-4 [&amp;>:first-child]:pt-0 [&amp;>:last-child]:pb-0">
+                        <div style="opacity: 1; background-color: #EAF3FF;">
+                          <div>
+                            <div class="umd:items-start flex items-center py-3">
+                              <div class="p-4"">
+                                <input type="checkbox" name="" id="">
+                              </div>
+                              <div class="text-center omd:basis-[260px]">SP_0001</div>
+                              <div class="umd:hidden text-center omd:basis-[300px]">Biviantac BRV</div>
+                              <div class="umd:hidden text-center omd:basis-[260px] md:flex justify-center">
+                                <img alt="Hỗn dịch uống Biviantac BRV điều trị triệu chứng ăn không tiêu, đầy hơi (20 gói x 10 ml)" loading="lazy"
+                                  width="48" height="48" decoding="async" data-nimg="1" class="object-contain"
+                                  srcset="https://cdn.nhathuoclongchau.com.vn/unsafe/48x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00018025_biviantac_khang_acid_bvp_20_goi_x_10ml_6598_63fd_large_0d42b28d3e.jpg 1x, https://cdn.nhathuoclongchau.com.vn/unsafe/96x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00018025_biviantac_khang_acid_bvp_20_goi_x_10ml_6598_63fd_large_0d42b28d3e.jpg 2x"
+                                  src="https://cdn.nhathuoclongchau.com.vn/unsafe/96x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00018025_biviantac_khang_acid_bvp_20_goi_x_10ml_6598_63fd_large_0d42b28d3e.jpg"
+                                  style="color: transparent;"></div>
+                              <div class="umd:hidden text-center omd:basis-[260px]">40</div>
+                              <div class="umd:hidden text-center omd:basis-[260px]"><span class="rounded" style="background-color: #ACEBA3; padding: 4px;color:#007B17;">còn hàng</span></div>
+                              <div class="umd:hidden text-center omd:basis-[260px]">203.500đ</div>
+                              <div class="umd:hidden text-center omd:basis-[260px]">Thuốc</div>
+                              <div class="umd:hidden text-center omd:basis-[260px] flex justify-center">
+                                <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:rg:" data-state="closed" class="flex ml-3 omd:ml-4 h-10 p-[3px] shrink-0 text-gray-6 [&amp;:not(:disabled)]:hover:opacity-75 [&amp;:not(:disabled)]:active:opacity-100 disabled:opacity-50 disabled:cursor-not-allowed" style="column-gap: 10px; align-items: center;">
+                                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px]" style="color: #215BA7;">
+                                    <path d="M2.91602 7.03125L4.16144 22.0657C4.25069 23.1499 5.17422 24 6.26256 24H17.7378C18.8261 24 19.7497 23.1499 19.8389 22.0657L21.0843 7.03125H2.91602ZM8.48387 21.1875C8.11581 21.1875 7.80616 20.9012 7.78281 20.5283L7.07969 9.18455C7.05564 8.79661 7.3502 8.46291 7.73748 8.43886C8.13916 8.41069 8.45847 8.70872 8.48317 9.09666L9.1863 20.4404C9.21119 20.8421 8.89333 21.1875 8.48387 21.1875ZM12.7033 20.4844C12.7033 20.873 12.3888 21.1875 12.0002 21.1875C11.6115 21.1875 11.297 20.873 11.297 20.4844V9.14062C11.297 8.75198 11.6115 8.4375 12.0002 8.4375C12.3888 8.4375 12.7033 8.75198 12.7033 9.14062V20.4844ZM16.9206 9.18459L16.2175 20.5283C16.1944 20.8974 15.8867 21.205 15.4718 21.1861C15.0845 21.1621 14.79 20.8284 14.814 20.4405L15.5171 9.0967C15.5412 8.70877 15.8811 8.42653 16.2628 8.43891C16.6501 8.46295 16.9447 8.79666 16.9206 9.18459Z" fill="currentColor"></path>
+                                    <path d="M21.1406 2.8125H16.9219V2.10938C16.9219 0.946219 15.9757 0 14.8125 0H9.1875C8.02434 0 7.07812 0.946219 7.07812 2.10938V2.8125H2.85938C2.0827 2.8125 1.45312 3.44208 1.45312 4.21875C1.45312 4.99533 2.0827 5.625 2.85938 5.625C9.32653 5.625 14.6737 5.625 21.1406 5.625C21.9173 5.625 22.5469 4.99533 22.5469 4.21875C22.5469 3.44208 21.9173 2.8125 21.1406 2.8125ZM15.5156 2.8125H8.48438V2.10938C8.48438 1.72144 8.79956 1.40625 9.1875 1.40625H14.8125C15.2004 1.40625 15.5156 1.72144 15.5156 2.10938V2.8125Z" fill="currentColor"></path>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px]" viewBox="0 0 24 24" style="color: #215BA7;"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></g></svg>
+                            </button>
+                            
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="opacity: 1;">
+                          <div>
+                            <div class="umd:items-start flex items-center py-3">
+                              <div class="p-4"">
+                                <input type="checkbox" name="" id="">
+                              </div>
+                              <div class="text-center omd:basis-[260px]">SP_0001</div>
+                              <div class="umd:hidden text-center omd:basis-[300px]">Biviantac BRV</div>
+                              <div class="umd:hidden text-center omd:basis-[260px] md:flex justify-center">
+                                <img alt="Hỗn dịch uống Biviantac BRV điều trị triệu chứng ăn không tiêu, đầy hơi (20 gói x 10 ml)" loading="lazy"
+                                  width="48" height="48" decoding="async" data-nimg="1" class="object-contain"
+                                  srcset="https://cdn.nhathuoclongchau.com.vn/unsafe/48x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00018025_biviantac_khang_acid_bvp_20_goi_x_10ml_6598_63fd_large_0d42b28d3e.jpg 1x, https://cdn.nhathuoclongchau.com.vn/unsafe/96x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00018025_biviantac_khang_acid_bvp_20_goi_x_10ml_6598_63fd_large_0d42b28d3e.jpg 2x"
+                                  src="https://cdn.nhathuoclongchau.com.vn/unsafe/96x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00018025_biviantac_khang_acid_bvp_20_goi_x_10ml_6598_63fd_large_0d42b28d3e.jpg"
+                                  style="color: transparent;"></div>
+                              <div class="umd:hidden text-center omd:basis-[260px]">40</div>
+                              <div class="umd:hidden text-center omd:basis-[260px]"><span class="rounded" style="background-color: #ACEBA3; padding: 4px;color:#007B17;">còn hàng</span></div>
+                              <div class="umd:hidden text-center omd:basis-[260px]">203.500đ</div>
+                              <div class="umd:hidden text-center omd:basis-[260px]">Thuốc</div>
+                              <div class="umd:hidden text-center omd:basis-[260px] flex justify-center">
+                                <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:rg:" data-state="closed" class="flex ml-3 omd:ml-4 h-10 p-[3px] shrink-0 text-gray-6 [&amp;:not(:disabled)]:hover:opacity-75 [&amp;:not(:disabled)]:active:opacity-100 disabled:opacity-50 disabled:cursor-not-allowed" style="column-gap: 10px; align-items: center;">
+                                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px]" style="color: #215BA7;">
+                                    <path d="M2.91602 7.03125L4.16144 22.0657C4.25069 23.1499 5.17422 24 6.26256 24H17.7378C18.8261 24 19.7497 23.1499 19.8389 22.0657L21.0843 7.03125H2.91602ZM8.48387 21.1875C8.11581 21.1875 7.80616 20.9012 7.78281 20.5283L7.07969 9.18455C7.05564 8.79661 7.3502 8.46291 7.73748 8.43886C8.13916 8.41069 8.45847 8.70872 8.48317 9.09666L9.1863 20.4404C9.21119 20.8421 8.89333 21.1875 8.48387 21.1875ZM12.7033 20.4844C12.7033 20.873 12.3888 21.1875 12.0002 21.1875C11.6115 21.1875 11.297 20.873 11.297 20.4844V9.14062C11.297 8.75198 11.6115 8.4375 12.0002 8.4375C12.3888 8.4375 12.7033 8.75198 12.7033 9.14062V20.4844ZM16.9206 9.18459L16.2175 20.5283C16.1944 20.8974 15.8867 21.205 15.4718 21.1861C15.0845 21.1621 14.79 20.8284 14.814 20.4405L15.5171 9.0967C15.5412 8.70877 15.8811 8.42653 16.2628 8.43891C16.6501 8.46295 16.9447 8.79666 16.9206 9.18459Z" fill="currentColor"></path>
+                                    <path d="M21.1406 2.8125H16.9219V2.10938C16.9219 0.946219 15.9757 0 14.8125 0H9.1875C8.02434 0 7.07812 0.946219 7.07812 2.10938V2.8125H2.85938C2.0827 2.8125 1.45312 3.44208 1.45312 4.21875C1.45312 4.99533 2.0827 5.625 2.85938 5.625C9.32653 5.625 14.6737 5.625 21.1406 5.625C21.9173 5.625 22.5469 4.99533 22.5469 4.21875C22.5469 3.44208 21.9173 2.8125 21.1406 2.8125ZM15.5156 2.8125H8.48438V2.10938C8.48438 1.72144 8.79956 1.40625 9.1875 1.40625H14.8125C15.2004 1.40625 15.5156 1.72144 15.5156 2.10938V2.8125Z" fill="currentColor"></path>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px]" viewBox="0 0 24 24" style="color: #215BA7;"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></g></svg>
+                            </button>
+                            
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="opacity: 1; background-color: #EAF3FF;">
+                          <div>
+                            <div class="umd:items-start flex items-center py-3">
+                              <div class="p-4"">
+                                <input type="checkbox" name="" id="">
+                              </div>
+                              <div class="text-center omd:basis-[260px]">SP_0001</div>
+                              <div class="umd:hidden text-center omd:basis-[300px]">Biviantac BRV</div>
+                              <div class="umd:hidden text-center omd:basis-[260px] md:flex justify-center">
+                                <img alt="Hỗn dịch uống Biviantac BRV điều trị triệu chứng ăn không tiêu, đầy hơi (20 gói x 10 ml)" loading="lazy"
+                                  width="48" height="48" decoding="async" data-nimg="1" class="object-contain"
+                                  srcset="https://cdn.nhathuoclongchau.com.vn/unsafe/48x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00018025_biviantac_khang_acid_bvp_20_goi_x_10ml_6598_63fd_large_0d42b28d3e.jpg 1x, https://cdn.nhathuoclongchau.com.vn/unsafe/96x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00018025_biviantac_khang_acid_bvp_20_goi_x_10ml_6598_63fd_large_0d42b28d3e.jpg 2x"
+                                  src="https://cdn.nhathuoclongchau.com.vn/unsafe/96x0/filters:quality(90)/https://cms-prod.s3-sgn09.fptcloud.com/00018025_biviantac_khang_acid_bvp_20_goi_x_10ml_6598_63fd_large_0d42b28d3e.jpg"
+                                  style="color: transparent;"></div>
+                              <div class="umd:hidden text-center omd:basis-[260px]">40</div>
+                              <div class="umd:hidden text-center omd:basis-[260px]"><span class="rounded" style="background-color: #ACEBA3; padding: 4px;color:#007B17;">còn hàng</span></div>
+                              <div class="umd:hidden text-center omd:basis-[260px]">203.500đ</div>
+                              <div class="umd:hidden text-center omd:basis-[260px]">Thuốc</div>
+                              <div class="umd:hidden text-center omd:basis-[260px] flex justify-center">
+                                <button type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:rg:" data-state="closed" class="flex ml-3 omd:ml-4 h-10 p-[3px] shrink-0 text-gray-6 [&amp;:not(:disabled)]:hover:opacity-75 [&amp;:not(:disabled)]:active:opacity-100 disabled:opacity-50 disabled:cursor-not-allowed" style="column-gap: 10px; align-items: center;">
+                                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px]" style="color: #215BA7;">
+                                    <path d="M2.91602 7.03125L4.16144 22.0657C4.25069 23.1499 5.17422 24 6.26256 24H17.7378C18.8261 24 19.7497 23.1499 19.8389 22.0657L21.0843 7.03125H2.91602ZM8.48387 21.1875C8.11581 21.1875 7.80616 20.9012 7.78281 20.5283L7.07969 9.18455C7.05564 8.79661 7.3502 8.46291 7.73748 8.43886C8.13916 8.41069 8.45847 8.70872 8.48317 9.09666L9.1863 20.4404C9.21119 20.8421 8.89333 21.1875 8.48387 21.1875ZM12.7033 20.4844C12.7033 20.873 12.3888 21.1875 12.0002 21.1875C11.6115 21.1875 11.297 20.873 11.297 20.4844V9.14062C11.297 8.75198 11.6115 8.4375 12.0002 8.4375C12.3888 8.4375 12.7033 8.75198 12.7033 9.14062V20.4844ZM16.9206 9.18459L16.2175 20.5283C16.1944 20.8974 15.8867 21.205 15.4718 21.1861C15.0845 21.1621 14.79 20.8284 14.814 20.4405L15.5171 9.0967C15.5412 8.70877 15.8811 8.42653 16.2628 8.43891C16.6501 8.46295 16.9447 8.79666 16.9206 9.18459Z" fill="currentColor"></path>
+                                    <path d="M21.1406 2.8125H16.9219V2.10938C16.9219 0.946219 15.9757 0 14.8125 0H9.1875C8.02434 0 7.07812 0.946219 7.07812 2.10938V2.8125H2.85938C2.0827 2.8125 1.45312 3.44208 1.45312 4.21875C1.45312 4.99533 2.0827 5.625 2.85938 5.625C9.32653 5.625 14.6737 5.625 21.1406 5.625C21.9173 5.625 22.5469 4.99533 22.5469 4.21875C22.5469 3.44208 21.9173 2.8125 21.1406 2.8125ZM15.5156 2.8125H8.48438V2.10938C8.48438 1.72144 8.79956 1.40625 9.1875 1.40625H14.8125C15.2004 1.40625 15.5156 1.72144 15.5156 2.10938V2.8125Z" fill="currentColor"></path>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-[18px] w-[18px]" viewBox="0 0 24 24" style="color: #215BA7;"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"/></g></svg>
+                            </button>
+                            
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="__cart-sidebar"></div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTSJNQS"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  </div>
+</body>
+
+</html>
