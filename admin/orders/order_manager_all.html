@@ -171,7 +171,7 @@
                       class="h-[62px] w-[180px] !bg-transparent !bg-none object-contain md:h-[70px] md:w-[183px]"></a>
                 </div>
                 <div class="info-title hidden py-3 px-4 md:block md:flex md:items-center">
-                  <p class="text-text-white font-semibold md:text-title3" style="padding-left:100px">SẢN PHẨM</p>
+                  <p class="text-text-white font-semibold md:text-title3" style="padding-left:100px">ĐƠN HÀNG</p>
                 </div>
                 <div class="grid place-content-end content-center md:col-start-3 md:col-end-4 md:place-content-stretch">
                   <div class="flex h-full items-center justify-between"><span class="mr-auto inline-block"></span>
@@ -476,12 +476,12 @@
                 <div class="rounded-t-lg bg-white">
                   <div class="info-title hidden px-4 md:block border-b md:flex justify-evenly gap-6  ">
                     <a href="#"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: 2px solid #215AA6; line-height:48px; color:#215AA6; min-width: 100px; text-align: center;">Tất cả</p></a>
-                    <a href="./account_manager_admin.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Chờ xác nhận</p></a>
-                    <a href="./account_manager_admin.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Chờ lấy hàng</p></a>
-                    <a href="./account_manager_admin.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Đang giao</p></a>
-                    <a href="./account_manager_admin.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Đã giao</p></a>
-                    <a href="./account_manager_admin.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Đã hủy</p></a>
-                    <a href="./account_manager_admin.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Trả hàng</p></a>
+                    <a href="./order_manager_pending_approval.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Chờ xác nhận</p></a>
+                    <a href="./order_manager_approved.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Chờ lấy hàng</p></a>
+                    <a href="./order_manager_pending_delivery.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Đang giao</p></a>
+                    <a href="./order_manager_delivered.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Đã giao</p></a>
+                    <a href="./order_manager_canceled.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Đã hủy</p></a>
+                    <a href="./order_manager_return.html"><p class="css-jey85n text-text-primary font-medium text-[16px]" style="border-bottom: none; line-height:48px;min-width: 100px; text-align: center;">Trả hàng</p></a>
                   </div>
                 </div>
                 <div class="rounded-lg bg-white mb-6">
@@ -492,14 +492,13 @@
                         class="p-4" style="height: 45px;">
                         <input type="checkbox" name="" id="">
                       </div>
-                        <div class="umd:hidden text-center omd:basis-[260px]">Mã sản phẩm</div>
-                        <div class="umd:hidden text-center omd:basis-[300px]">Tên sản phẩm</div>
-                        <div class="umd:hidden text-center omd:basis-[260px]">Ảnh</div>
-                        <div class="umd:hidden text-center omd:basis-[260px]">Số lượng</div>
+                        <div class="umd:hidden text-center omd:basis-[260px]">Mã đơn hàng</div>
+                        <div class="umd:hidden text-center omd:basis-[300px]">Ngày tạo đơn</div>
+                        <div class="umd:hidden text-center omd:basis-[260px]">Tên khách hàng</div>
+                        <div class="umd:hidden text-center omd:basis-[260px]">Thành tiền</div>
+                        <div class="umd:hidden text-center omd:basis-[260px]">Ngày giao</div>
                         <div class="umd:hidden text-center omd:basis-[260px]">Tình trạng</div>
-                        <div class="umd:hidden text-center omd:basis-[260px]">Giá tiền</div>
-                        <div class="umd:hidden text-center omd:basis-[260px]">Danh mục</div>
-                        <div class="umd:hidden text-center omd:basis-[260px]">Thao tác</div>
+                        <div class="umd:hidden text-center omd:basis-[260px]">Ngày hoàn thành</div>
                       </div>
                       <div class="umd:px-0 divide-y divide-divider-1pt bg-white umd:[&amp;>*]:px-4 [&amp;>:first-child]:pt-0 [&amp;>:last-child]:pb-0">
                         <div style="opacity: 1; background-color: #EAF3FF;">
